@@ -83,6 +83,8 @@ import AuthScreen from './src/screens/Auth/Auth';
 import SharedPlaceScreen from './src/screens/SharedPlace/SharedPlace';
 import FindPlaceScreen from './src/screens/FindPlace/FindPlace';
 import PlaceDetailScreen from './src/screens/PlaceDetail/PlaceDetail';
+import SideDrawerScreen from './src/screens/SideDrawer/SideDrawer';
+
 import configureStore from './src/store/configureStore';
 
 
@@ -92,6 +94,7 @@ Navigation.registerComponentWithRedux("awesome-places.AuthScreen", () => AuthScr
 Navigation.registerComponentWithRedux("awesome-places.SharedPlaceScreen", () => SharedPlaceScreen, Provider, store);
 Navigation.registerComponentWithRedux("awesome-places.FindPlaceScreen", () => FindPlaceScreen, Provider, store);
 Navigation.registerComponentWithRedux("awesome-places.PlaceDetailScreen", () => PlaceDetailScreen, Provider, store);
+Navigation.registerComponent("awesome-places.SideDrawerScreen", () => SideDrawerScreen);
 
 Navigation.events().registerAppLaunchedListener(() => {
   Navigation.setRoot({
